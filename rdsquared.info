@@ -2,6 +2,8 @@ release-date:0
 compile-date:0
 url:https://mxwebserver.7m.pl/rdsquared/minecraft.jar
 launch-method:preclassic
-proxy-args:
+launch-method-link:
+proxy-args:-Dhttp.proxyHost=betacraft.uk
 other-name:RDSquared
+protocolVersion:69
 file-ver:1
