@@ -11,10 +11,7 @@ Quite a bit! Most notable features are:
 - And more!
 
 ## Why?
-Why not? This is just a little hobby mod, and my actual first attempt at some serious modding!
-
-## How long did this take?
-For the first release, it took me 2 hours of coding and messing with the movement to get this up and running, and I don't even know Java!
+Why not? This is my actual first attempt at some serious modding!
 
 ## Sounds cool, how do I download this?
 Just go to the Releases section and download the latest version, then use your favourite launcher to Add or Replace the JAR file, and you're good to go!
