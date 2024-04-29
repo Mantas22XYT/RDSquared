@@ -1,6 +1,7 @@
 release-date:1375740000000
 compile-date:1242474480000
 launch-method:preclassic
+launchmethod:preclassic
 launch-method-link:
 url:https://github.com/Mantas22XYT/RDSquared/releases/download/LTS/RDSquared.jar
 proxy-args:-Dhttp.proxyHost=betacraft.uk
