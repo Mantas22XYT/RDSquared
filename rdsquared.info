@@ -1,9 +1,8 @@
-release-date:0
-compile-date:0
-url:https://mxwebserver.7m.pl/rdsquared/minecraft.jar
+release-date:1375740000000
+compile-date:1242474480000
 launch-method:preclassic
 launch-method-link:
+url:https://github.com/Mantas22XYT/RDSquared/releases/download/LTS/RDSquared.jar
 proxy-args:-Dhttp.proxyHost=betacraft.uk
 other-name:RDSquared
-protocolVersion:69
 file-ver:1
