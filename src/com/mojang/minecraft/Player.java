@@ -24,8 +24,7 @@ public class Player extends Entity {
 		}
 
 		if(Keyboard.isKeyDown(Keyboard.KEY_W) && Keyboard.isKeyDown(Keyboard.KEY_LSHIFT)) {
-			this.xd *= 0.9F;
-			this.zd *= 0.9F;
+			--var2;
 		} 
 
 		if(Keyboard.isKeyDown(Keyboard.KEY_S)) {
@@ -41,6 +40,10 @@ public class Player extends Entity {
 		}
 
 		if((Keyboard.isKeyDown(Keyboard.KEY_SPACE)) && this.onGround) {
+			this.yd = 0.5F;
+		}
+
+		if((Keyboard.isKeyDown(Keyboard.KEY_SPACE)) && Keyboard.isKeyDown(Keyboard.KEY_LSHIFT) && this.onGround) {
 			this.yd = 0.75F;
 		}
 
@@ -50,7 +53,7 @@ public class Player extends Entity {
 		this.xd *= 0.91F;
 		this.yd *= 0.98F;
 		this.zd *= 0.91F;
-		if(!Keyboard.isKeyDown(Keyboard.KEY_LSHIFT) && Keyboard.isKeyDown(Keyboard.KEY_W)) {
+		if(!Keyboard.isKeyDown(Keyboard.KEY_LSHIFT) && Keyboard.isKeyDown(Keyboard.KEY_W)) { // shitty hack
 			this.xd *= 0.7F;
 			this.zd *= 0.7F;
 		}
