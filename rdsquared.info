@@ -6,4 +6,5 @@ launch-method-link:
 url:https://github.com/Mantas22XYT/RDSquared/releases/download/LTS2/RDSquared.jar
 proxy-args:-Dhttp.proxyHost=betacraft.uk
 other-name:RDSquared
+protocolVersion:69
 file-ver:3
