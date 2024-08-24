@@ -19,13 +19,17 @@ public class Player extends Entity {
 			this.resetPos();
 		}
 
+		/*if(Keyboard.isKeyDown(Keyboard.KEY_W)) {
+			if(Keyboard.isKeyDown(Keyboard.KEY_LSHIFT)) {
+				var2-=2.0F;
+			} else {
+				--var2;
+			}
+		} I don't want this code to see the light of day. */
+
 		if(Keyboard.isKeyDown(Keyboard.KEY_W)) {
 			--var2;
 		}
-
-		if(Keyboard.isKeyDown(Keyboard.KEY_W) && Keyboard.isKeyDown(Keyboard.KEY_LSHIFT)) {
-			--var2;
-		} 
 
 		if(Keyboard.isKeyDown(Keyboard.KEY_S)) {
 			++var2;
@@ -53,9 +57,9 @@ public class Player extends Entity {
 		this.xd *= 0.91F;
 		this.yd *= 0.98F;
 		this.zd *= 0.91F;
-		if(!Keyboard.isKeyDown(Keyboard.KEY_LSHIFT) && Keyboard.isKeyDown(Keyboard.KEY_W)) { // shitty hack
-			this.xd *= 0.7F;
-			this.zd *= 0.7F;
-		}
+		if (this.onGround && !Keyboard.isKeyDown(Keyboard.KEY_LSHIFT)) {
+            this.xd *= 0.7f;
+            this.zd *= 0.7f;
+        }
 	}
 }
