@@ -52,6 +52,7 @@ public class RubyDung implements Runnable {
 		this.fogColor1.put(new float[]{(float)(var2 >> 16 & 255) / 255.0F, (float)(var2 >> 8 & 255) / 255.0F, (float)(var2 & 255) / 255.0F, 1.0F});
 		this.fogColor1.flip();
 		Display.setDisplayMode(new DisplayMode(1024, 768));
+		Display.setTitle("RubyDung");
 		Display.create();
 		Keyboard.create();
 		Mouse.create();
@@ -68,11 +69,12 @@ public class RubyDung implements Runnable {
 		GL11.glMatrixMode(GL11.GL_PROJECTION);
 		GL11.glLoadIdentity();
 		GL11.glMatrixMode(GL11.GL_MODELVIEW);
-		this.level = new Level(512, 512, 128);
+		this.level = new Level(512, 512, 128); // widht, length, height
 		this.levelRenderer = new LevelRenderer(this.level);
 		this.player = new Player(this.level);
 		this.particleEngine = new ParticleEngine(this.level);
 		Mouse.setGrabbed(true);
+		System.out.println("Started RubyDungSquared version 1.2_01!");
 		
 
 		for(int var6 = 0; var6 < 10; ++var6) {
@@ -113,7 +115,7 @@ public class RubyDung implements Runnable {
 				++var3;
 
 				while(System.currentTimeMillis() >= var1 + 1000L) {
-					System.out.println("DEBUG: " + var3 + " fps, " + Chunk.updates + " chunk updates");
+					Display.setTitle("RubyDung [DEBUG: " + var3 + " fps, " + Chunk.updates + " chunk updates]");
 					Chunk.updates = 0;
 					var1 += 1000L;
 					var3 = 0;
@@ -174,7 +176,7 @@ public class RubyDung implements Runnable {
 					this.paintTexture = 10;
 				}
 				
-				if(Keyboard.getEventKey() == Keyboard.KEY_P) {
+				if(Keyboard.getEventKey() == Keyboard.KEY_MINUS) {
 					this.paintTexture = 11;
 				}
 				
