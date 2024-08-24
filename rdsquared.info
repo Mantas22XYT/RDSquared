@@ -3,7 +3,7 @@ compile-date:1242474480000
 launch-method:preclassic
 launchmethod:preclassic
 launch-method-link:
-url:https://github.com/Mantas22XYT/RDSquared/releases/download/LTS2/RDSquared.jar
-proxy-args:-Dhttp.proxyHost=betacraft.uk
+url:https://github.com/Mantas22XYT/RDSquared/releases/download/1.2_01/RubyDungSquared.jar
+proxy-args:
 other-name:RDSquared
-file-ver:3
+file-ver:1
